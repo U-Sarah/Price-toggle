@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Component</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="top">
+        <h2>Our Pricing</h2>
+        <div class="flex-container1">
+          <p>Annually</p>
+          <div class="toggle-bar">
+            <input type="checkbox" id="toggle" onchange="togglePrice()" checked />
+            <label for="toggle"></label>
+          </div>
+          <p>Monthly</p>
+        </div>
+      </div>
+      <div class="flex-container2">
+        <div class="basic">
+          <h3>Basic</h3>
+          <h1 id="basic-price">
+            <span style="font-size: 30px; margin-bottom: -20px">$</span> 199.99
+          </h1>
+          <hr />
+          <h3>500GB Storage</h3>
+          <hr />
+          <h3>2 Users Allowed</h3>
+          <hr />
+          <h3>Send up to 3GB</h3>
+          <hr />
+          <button
+            style="
+              background-image: linear-gradient(
+                to right,
+                hsl(236, 72%, 79%),
+                hsl(237, 63%, 64%)
+              );
+              color: white;
+              margin-top: 5px;
+            "
+          >
+            LEARN MORE
+          </button>
+        </div>
+        <div class="professional">
+          <h3>Professional</h3>
+          <h1 id="professional-price">
+            <span style="font-size: 30px; margin-bottom: -20px">$</span> 249.99
+          </h1>
+          <div class="features">
+            <hr />
+            <h3>1TB Storage</h3>
+            <hr />
+            <h3>5 Users Allowed</h3>
+            <hr />
+            <h3>Send up to 10GB</h3>
+            <hr />
+            <button
+              style="
+                background-color: white;
+                color: hsl(237, 63%, 64%);
+                margin-top: 15px;
+              "
+            >
+              LEARN MORE
+            </button>
+          </div>
+        </div>
+        <div class="master">
+          <h3>Mater</h3>
+          <h1 id="master-price">
+            <span style="font-size: 30px; margin-bottom: -20px">$</span> 399.99
+          </h1>
+          <hr />
+          <h3>2TB Storage</h3>
+          <hr />
+          <h3>10 Users Allowed</h3>
+          <hr />
+          <h3>Send up to 20GB</h3>
+          <hr />
+          <button
+            style="
+              background-image: linear-gradient(
+                to right,
+                hsl(236, 72%, 79%),
+                hsl(237, 63%, 64%)
+              );
+              color: white;
+              margin-top: 5px;
+            "
+          >
+            LEARN MORE
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
